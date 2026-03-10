@@ -230,7 +230,14 @@ button {
   padding-top: 10px;
 }
 
-.eyebrow,
+.eyebrow {
+  margin: 0 0 14px;
+  font-size: 1.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
 .section-kicker {
   margin: 0 0 14px;
   font-size: 0.82rem;
@@ -337,11 +344,10 @@ button {
 /* POP ON SCROLL */
 .pop-on-scroll {
   opacity: 0;
-  transform: translateY(22px) scale(0.992);
+  transform: translateY(18px) scale(0.992);
   transition:
-    opacity 700ms ease,
-    transform 700ms ease;
-  will-change: transform, opacity;
+    opacity 450ms ease,
+    transform 450ms ease;
 }
 
 .pop-on-scroll.is-visible {
@@ -351,8 +357,8 @@ button {
 
 .reveal {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 800ms ease, transform 800ms ease;
+  transform: translateY(20px);
+  transition: opacity 500ms ease, transform 500ms ease;
 }
 
 .reveal.is-visible {
@@ -369,7 +375,7 @@ button {
 .trapezoid-carousel-section {
   position: relative;
   width: 100%;
-  padding: 0 28px;
+  padding: 0 0px;
 }
 
 .trapezoid-carousel-section::before,
