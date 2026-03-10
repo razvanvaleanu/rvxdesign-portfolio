@@ -1,3 +1,6 @@
+import { inject } from '@vercel/analytics';
+inject();
+
 const siteHeader = document.getElementById("siteHeader");
 const revealElements = document.querySelectorAll(".reveal");
 const popElements = document.querySelectorAll(".pop-on-scroll");
